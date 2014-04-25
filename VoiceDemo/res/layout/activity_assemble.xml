@@ -1,0 +1,109 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/assemblelayout" 
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".AssembleActivity" >
+
+    <TextView
+        android:id="@+id/assembleheading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="0dp"
+        android:text="How to assemble the product?" />
+    
+    <Button
+        android:id="@+id/readAssemble"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/assembleheading"
+        android:layout_toLeftOf="@+id/stopAssemble"
+        android:text="Read" />
+
+    <Button
+        android:id="@+id/stopAssemble"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/readAssemble"
+        android:layout_alignBottom="@+id/readAssemble"
+        android:layout_alignRight="@+id/scrollView1"
+        android:text="Stop" />
+    
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" 
+        android:layout_marginTop="50dp">
+    
+
+    <LinearLayout
+        android:layout_width="420dp"
+        android:layout_height="match_parent"
+        android:layout_alignBottom="@+id/repairstep4"
+        android:layout_alignParentRight="true"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/assemblestep1"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="@string/assemble_panel" />
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="298dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/panel" />
+
+        <TextView
+            android:id="@+id/assemblestep2"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="34dp"
+            android:text="@string/assemble_door" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/door" />
+        
+        <TextView
+            android:id="@+id/assemblestep3"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:text="@string/assemble_securing" />
+        
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/securing" />
+        
+    <TextView
+            android:id="@+id/assemblestep3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:text="@string/assemble_adapter" />
+        
+    <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/finishassemble" />
+
+    </LinearLayout>
+
+    </ScrollView>
+</RelativeLayout>

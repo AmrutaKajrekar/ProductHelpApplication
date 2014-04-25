@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/aqua"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Type or Speak your concern about the product" />
+
+    <EditText
+        android:id="@+id/query"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView1"
+        android:layout_below="@+id/textView1"
+        android:layout_toLeftOf="@+id/go"
+        android:ems="10" />
+
+    <Button
+        android:id="@+id/go"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/b"
+        android:layout_alignParentRight="true"
+        android:drawableRight="@drawable/search"
+        android:text="Go" />
+
+    <Button
+        android:id="@+id/b"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/query"
+        android:drawableRight="@drawable/microp"
+        android:text="Speak" />
+
+    <Button
+        android:id="@+id/help"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/b"
+        android:text="Help" />
+
+    <Button
+        android:id="@+id/repair"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/assemble"
+        android:layout_alignRight="@+id/assemble"
+        android:layout_below="@+id/install"
+        android:text="Repair" />
+
+    <Button
+        android:id="@+id/assemble"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView2"
+        android:layout_below="@+id/repair"
+        android:layout_marginLeft="25dp"
+        android:text="Assemble" />
+
+    <Button
+        android:id="@+id/operate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/assemble"
+        android:layout_alignRight="@+id/assemble"
+        android:layout_below="@+id/assemble"
+        android:text="Operate" />
+    
+   <Button
+        android:id="@+id/video"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/assemble"
+        android:layout_alignRight="@+id/assemble"
+        android:layout_below="@+id/operate"
+        android:text="Play Video" />
+   
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/help"
+        android:layout_below="@+id/help"
+        android:layout_marginTop="15dp"
+        android:text="Choose the operation you want to perform on the product" />
+
+    <Button
+        android:id="@+id/install"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/repair"
+        android:layout_alignRight="@+id/repair"
+        android:layout_below="@+id/textView2"
+        android:layout_marginTop="17dp"
+        android:text="Install" />
+
+</RelativeLayout>
